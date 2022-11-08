@@ -2,12 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import VideoItem from "./VideoItem";
 import uuid from "react-uuid";
+import withWordTime from "../../hoc/DateTimePretty";
 
 const VideoList = props => {
 
-    return (
-        props.list.map(item => <VideoItem key={uuid()} item={item} />)
-    );
+    const VideoWithWordTime = withWordTime(VideoItem);
+
+    return props.list.map((item) => {
+        return (
+            <VideoWithWordTime key={uuid()} {...item} />
+        );
+    });
 };
 
 VideoList.propTypes = {

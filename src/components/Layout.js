@@ -8,11 +8,11 @@ const Layout = () => {
                     <a className="nav-link" href="/">home</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/time">Time</a>
+                    <a className="nav-link" href="/view-time">view time</a>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="/highlight">Highlight</a>
-                </li>
+                {/*<li className="nav-item">*/}
+                {/*    <a className="nav-link" href="/highlight">Highlight</a>*/}
+                {/*</li>*/}
             </ul>
             <div className="wrapper">
                 <Outlet/>
