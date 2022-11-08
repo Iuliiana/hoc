@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import videoList from "../data/data";
+import {videoList} from "../data/data";
 import VideoList from "../components/video/VideoList";
 
-export default function ViewTimePage() {
+export default function TimePage() {
     const [list] = useState(videoList);
 
     return (
